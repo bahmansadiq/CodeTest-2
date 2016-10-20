@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gulp Demo</title>
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<!-- endbower -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="/app/style/styles.css">
+<!-- endinject -->
+</head>
+
+<body>
+<div class="container">
+<!-- panel for javascript part codetest-2 -->
+    <div class="panel panel-primary">
+		<div class="panel-heading">
+		 	   <h1> Javascript</h1>
+		</div>
+		<div class="panel-body">
+			<div>
+		<!-- javascript part to show the current day and time -->	
+				<label id="timeAndDate" class="text-center"> </label>
+			</div>
+			<div >
+				<button class="col-md-12 btn btn-primary" onclick="scrlsts()"> Click and see the change</button>
+				<legend></legend>
+				<p class="text-center" id="magicOrigin"></p>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1>HTML and jQuery</h1>
+		</div>
+		<div class="panel-body">
+			<div>
+				<div class="first-word"></div>
+			    <p class="mekeBold">Beach Towel</p>
+      			<p class="mekeBold">Suntan Lotion </p>
+      			<p class="mekeBold">Mask, Fins and Snorkel </p>
+     			<p class="mekeBold">Boogie Board</p>
+     		</div>
+     		<div class="col-md-12">
+     			<button id='double_click' class="single_click">Click Me!</button>
+     			<p class="parse"></p>
+
+     		</div>	
+     		<div class="col-md-12">
+	     	    <div style="background-color:red" class="newColor"> 
+	            	<p > Click the button to change the background color of this paragraph.</p> 
+	            	<button class="changeColor">Change Color</button> 
+	        	</div>	
+        	</div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- endbower -->
+<!-- inject:js -->
+<script src="/app/app.js"></script>
+<!-- endinject -->
+</body>
+</html>
